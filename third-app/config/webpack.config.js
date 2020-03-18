@@ -508,8 +508,8 @@ module.exports = function(webpackEnv) {
     },
     plugins: [
       new ModuleFederationPlugin({
-        name: "third-app",
-        library: { type: "var", name: "third-app" },
+        name: "thirdApp",
+        library: { type: "var", name: "thirdApp" },
         filename: "remoteEntry.js",
         remotes: {
           sideapp: "sideapp",
